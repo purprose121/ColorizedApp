@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     @IBOutlet var resultColor: UIView!
     
@@ -60,12 +60,18 @@ extension ViewController {
     
     private func setupLabels() {
         labelForRedSlider.text = "Red:"
+        labelForRedSlider.font = UIFont.systemFont(ofSize: 13)
         labelForGreenSlider.text = "Green:"
+        labelForGreenSlider.font = UIFont.systemFont(ofSize: 13)
         labelForBlueSlider.text = "Blue:"
+        labelForBlueSlider.font = UIFont.systemFont(ofSize: 13)
         
         valueForRedSlider.text = String(format: "%.2f", redSlider.value)
+        valueForRedSlider.font = UIFont.systemFont(ofSize: 13)
         valueForGreenSlider.text = String(format: "%.2f", greenSlider.value)
+        valueForGreenSlider.font = UIFont.systemFont(ofSize: 13)
         valueForBlueSlider.text = String(format: "%.2f", blueSlider.value)
+        valueForBlueSlider.font = UIFont.systemFont(ofSize: 13)
     }
     
     private func setupSliders() {
